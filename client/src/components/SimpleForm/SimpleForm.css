@@ -1,0 +1,91 @@
+:root {
+  --border: 0;
+  --border-radius: 8px;
+  --elem-height: 36px;
+  --font-size: 24px;
+  --font-size-sm: calc(var(--font-size) * .75);
+  --input-border-width: 2px;
+  --input-margin-bottom: 8px;
+  --input-padding-left: 16px;
+}
+
+.container {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.form {
+  margin: 16px auto;
+  max-width: 400px;
+}
+
+.input-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--input-margin-bottom);
+  text-align: left;
+}
+
+.input-text {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  display: block;
+  font-size: var(--font-size);
+  height: var(--elem-height);
+  margin-bottom: var(--input-margin-bottom);
+  padding: 0;
+  padding-left: var(--input-padding-left);
+  width: calc(100% - var(--input-padding-left));
+}
+
+.input-file {
+  border: var(--input-border-width) dotted rgba(255, 255, 255, 0.75);
+  border-radius: var(--border-radius);
+  display: block;
+  font-size: var(--font-size-sm);
+  height: calc(var(--elem-height) * 4);
+  line-height: calc(var(--elem-height) * 4);
+  margin-bottom: var(--input-margin-bottom);
+  padding: 0;
+  padding-left: var(--input-padding-left);
+  width: calc(100% - var(--input-padding-left) - var(--input-border-width) * 2);
+}
+
+.img-preview {
+  --img-height: 350px;
+  --padding-horizontal: 20px;
+  border-radius: calc(var(--border-radius) * 4);
+  height: auto;
+  line-height: var(--img-height);
+  margin: 0 auto;
+  max-height: var(--img-height);
+  max-width: 100%;
+}
+
+.img-preview__empty {
+  border: var(--input-border-width) dotted rgba(255, 255, 255, 0.75);
+}
+
+.button-submit {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  height: var(--elem-height);
+  margin-top: 8px;
+  width: 100%;
+}
+
+.button-submit:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.file-path {
+  font-size: var(--font-size-sm);
+  text-align: left;
+}
+
+.file-path__link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
